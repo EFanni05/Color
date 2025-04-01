@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,13 @@ namespace Color8
             Red = 0;
             Green = 0;
             Blue = 0;
+        }
+
+        public RGBColor(Color color)
+        {
+            Red = color.R();
+            Green = color.G();
+            Blue = color.B();
         }
 
         public RGBColor(int red, int green, int blue)
